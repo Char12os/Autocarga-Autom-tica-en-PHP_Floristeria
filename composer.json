@@ -1,0 +1,12 @@
+{
+    "name": "estudiante/php-autoload-psr4",
+    "description": "Laboratorio de Autocarga PSR-4 con Composer",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
