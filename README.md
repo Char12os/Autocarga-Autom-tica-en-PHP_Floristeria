@@ -1,7 +1,7 @@
 ## Autocarga Automatica en PHP 
 Este proyecto consiste en la implementación de la carga automática de clases (Autoload) en PHP utilizando Composer bajo el estándar PSR-4. Su objetivo principal es mejorar la organización del código y la gestión de dependencias, eliminando la necesidad de incluir archivos manualmente mediante include o require.
 ## Estructura archivo
-<img width="229" height="395" alt="image" src="https://github.com/user-attachments/assets/90b780cd-a972-4642-9209-c1537c894578" />
+<img width="210" height="479" alt="image" src="https://github.com/user-attachments/assets/0e74dbb2-2abb-460c-8875-bd4616575973" />
 
 ## Creación del proyecto
 El proyecto fue creado manualmente mediante comandos en la terminal para definir la estructura base de carpetas y archivos, incluyendo:
@@ -238,7 +238,8 @@ class Carrito
 }
 ```
 ## Proyecto funcionando
-<img width="614" height="370" alt="image" src="https://github.com/user-attachments/assets/a1cb1e44-b9c2-4e68-b6d9-d4c9a4f15566" />
+<img width="633" height="374" alt="image" src="https://github.com/user-attachments/assets/186d4236-f388-4c9b-b544-ac6dd25744b4" />
+
 
 ## Conclusiones Tecnicas
 
