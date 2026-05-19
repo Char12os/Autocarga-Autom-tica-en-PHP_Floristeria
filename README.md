@@ -26,7 +26,7 @@ Gracias al estándar PSR-4, Composer puede localizar automáticamente las clases
 
 Gracias al estándar PSR-4, Composer puede localizar automáticamente las clases según su namespace sin necesidad de importaciones manuales.
 ## Estructura archivo
-
+``` bash 
 php-autoload-psr4/
 │
 ├── composer.json
@@ -41,7 +41,7 @@ php-autoload-psr4/
     │
     └── Servicios/
         └── Carrito.php
-        
+  ```      
 <img width="210" height="479" alt="image" src="https://github.com/user-attachments/assets/0e74dbb2-2abb-460c-8875-bd4616575973" />
 
 ## Creación del proyecto
