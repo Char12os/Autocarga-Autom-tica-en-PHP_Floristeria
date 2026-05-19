@@ -1,6 +1,47 @@
 ## Autocarga Automatica en PHP 
 Este proyecto consiste en la implementación de la carga automática de clases (Autoload) en PHP utilizando Composer bajo el estándar PSR-4. Su objetivo principal es mejorar la organización del código y la gestión de dependencias, eliminando la necesidad de incluir archivos manualmente mediante include o require.
+## Guia de Intalacion
+Clonar el repositorio
+```bash
+git clone https://github.com/USUARIO/php-autoload-psr4.git
+```
+Entrar al proyecto
+cd php-autoload-psr4
+Instalar dependencias de Composer
+```bash
+composer install
+```
+Ejecutar el proyecto
+```bash
+php index.php
+```
+## Relación entre Namespaces y Carpetas
+
+| Namespace | Carpeta Física |
+|---|---|
+| `App\Modelos` | `src/Modelos/` |
+| `App\Servicios` | `src/Servicios/` |
+
+Gracias al estándar PSR-4, Composer puede localizar automáticamente las clases según su namespace sin necesidad de importaciones manuales.
+
+Gracias al estándar PSR-4, Composer puede localizar automáticamente las clases según su namespace sin necesidad de importaciones manuales.
 ## Estructura archivo
+
+php-autoload-psr4/
+│
+├── composer.json
+├── index.php
+├── README.md
+├── vendor/
+│
+└── src/
+    ├── Modelos/
+    │   ├── Producto.php
+    │   └── Usuario.php
+    │
+    └── Servicios/
+        └── Carrito.php
+        
 <img width="210" height="479" alt="image" src="https://github.com/user-attachments/assets/0e74dbb2-2abb-460c-8875-bd4616575973" />
 
 ## Creación del proyecto
@@ -243,7 +284,14 @@ class Carrito
 
 ## Conclusiones Tecnicas
 
-Durante el desarrollo de este laboratorio se evidenciaron múltiples ventajas al implementar la carga automática de clases mediante el estándar PSR-4 con Composer. En primer lugar, se mejora la mantenibilidad del código, ya que permite agregar nuevas clases sin necesidad de modificar archivos globales ni utilizar instrucciones como `include` o `require`, facilitando así la organización y escalabilidad del sistema. Además, se optimiza la eficiencia de memoria gracias al uso de Lazy Loading, donde las clases solo se cargan cuando son necesarias, reduciendo el consumo de recursos y mejorando el rendimiento. Por otra parte, la estandarización proporcionada por PSR-4 permite una estructura clara y consistente del proyecto, lo cual facilita el trabajo colaborativo y la comprensión del código por parte de otros desarrolladores. En conjunto, estas ventajas contribuyen a un desarrollo más ordenado, eficiente y alineado con buenas prácticas, permitiendo además reutilizar el sistema en diferentes contextos, como se demostró en la adaptación del proyecto a una florería.
+## Mantenibilidad
+La estructura basada en namespaces permite agregar nuevas clases sin modificar archivos globales ni agregar múltiples instrucciones include o require. Esto facilita la escalabilidad y el mantenimiento del proyecto.
+
+## Eficiencia de Memoria
+Composer utiliza Lazy Loading, cargando únicamente las clases necesarias durante la ejecución. Esto reduce el consumo de memoria y mejora el rendimiento general de la aplicación.
+
+## Estandarización
+El uso del estándar PSR-4 proporciona una estructura organizada y consistente, facilitando el trabajo colaborativo entre desarrolladores y permitiendo que otros programadores comprendan rápidamente el proyecto.
 
 ## Desarrollado por  
 Este laboratorio ha sido desarrollado por el estudiante de la Universidad Tecnológica de Panamá:
