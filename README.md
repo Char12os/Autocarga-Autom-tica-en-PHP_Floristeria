@@ -1,17 +1,46 @@
 ## Autocarga Automatica en PHP 
 Este proyecto consiste en la implementación de la carga automática de clases (Autoload) en PHP utilizando Composer bajo el estándar PSR-4. Su objetivo principal es mejorar la organización del código y la gestión de dependencias, eliminando la necesidad de incluir archivos manualmente mediante include o require.
 ## Guía de Intalación
-Clonar el repositorio
+## Guía de Instalación
+
+### 1. Clonar el repositorio
+
 ```bash
 git clone https://github.com/USUARIO/php-autoload-psr4.git
 ```
-Entrar al proyecto
+---
+
+### 2. Entrar al proyecto
+
+```bash
 cd php-autoload-psr4
-Instalar dependencias de Composer
+```
+
+---
+
+### 3. Instalar dependencias de Composer
+
 ```bash
 composer install
 ```
-Ejecutar el proyecto
+
+Este comando descargará automáticamente la carpeta `vendor/` y generará los archivos necesarios para la autocarga de clases.
+
+---
+
+### 4. Actualizar el autoload de Composer
+
+Si se agregan nuevas clases, carpetas o namespaces al proyecto, ejecutar:
+
+```bash
+composer dump-autoload
+```
+Este comando regenera automáticamente el sistema de autocarga basado en PSR-4.
+
+---
+
+### 5. Ejecutar el proyecto
+
 ```bash
 php index.php
 ```
