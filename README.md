@@ -23,8 +23,6 @@ php index.php
 | `App\Servicios` | `src/Servicios/` |
 
 Gracias al estándar PSR-4, Composer puede localizar automáticamente las clases según su namespace sin necesidad de importaciones manuales.
-
-Gracias al estándar PSR-4, Composer puede localizar automáticamente las clases según su namespace sin necesidad de importaciones manuales.
 ## Estructura archivo
 ``` bash 
 php-autoload-psr4/
